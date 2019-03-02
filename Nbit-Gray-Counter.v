@@ -1,15 +1,15 @@
 //This module implements a syncronus gray counter enebled by a pulse
+//parameter N creates a N bit counter 
+//(for this example N=4 meaning that i get a four bit counter)
 
 `timescale 1ns / 1ps
 
-module gray_Nbits #(parameter N=4)(clk, clk_en, rst, gray_out, rstled);
+module gray_Nbits #(parameter N=4)(clk, clk_en, rst, gray_out);
     input clk, clk_en, rst;
     output [N-1:0]gray_out;
-    output rstled;
     reg [N-1:-1] state;
 
 	//localy used
-	reg temp;
     reg no_ones_below [N-1:-1];
     integer i, j, k;
     reg q_msb;
@@ -19,7 +19,6 @@ module gray_Nbits #(parameter N=4)(clk, clk_en, rst, gray_out, rstled);
         if (rst == 1'b1)
         begin
             // Resetting involves setting the imaginary bit to 1
-            temp <=1;
             state[-1] <= 1;
             for (i = 0; i <= N-1; i = i + 1)
                 state[i] <= 0;    
@@ -37,7 +36,6 @@ module gray_Nbits #(parameter N=4)(clk, clk_en, rst, gray_out, rstled);
             
             state[N-1] <= state[N-1] ^ (q_msb & no_ones_below[N-2]);
         end
-        else temp <=0;
     end
 
     always @(*)
@@ -51,8 +49,7 @@ module gray_Nbits #(parameter N=4)(clk, clk_en, rst, gray_out, rstled);
         
     end
 
-    assign gray_out = state[N-1:0];
-  //  assign rstled = temp;
-        
+    assign gray_out = state[N-1:0]; 
+
 endmodule
 
