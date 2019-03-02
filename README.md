@@ -1,2 +1,2 @@
 # Modules-verilog
-Modules written in verilog
+This repository contains stand-alone modules that i wrote and used during my studies
