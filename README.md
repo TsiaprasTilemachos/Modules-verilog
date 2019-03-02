@@ -1,2 +1,2 @@
-# Modules-verilog
-This repository contains stand-alone modules that i wrote and used during my studies
+# Collection-of-Modules-verilog
+This repository contains acollection of different kinds of  modules that i developed and used during my studies
