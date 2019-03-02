@@ -1,6 +1,9 @@
-//This modules translates the binary value of the gray counter
-//to the values needed to display the hex representation of the
-//counter value
+//author: Tilemachos Tsiapras
+//module name: decoder
+//file : Seven-Segment-Display-decoder.v
+//description : This modules translates the binary value of the gray counter
+//              to the values needed to display the hex representation of the
+//              counter value
 
 `timescale 1ns / 1ps
 

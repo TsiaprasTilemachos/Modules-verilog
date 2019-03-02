@@ -1,9 +1,12 @@
-//This module implements a level to pusle that takes a multiple cycle pulse 
-//and returns a single cycle pulse.
-//This implementation uses a 3 state FSM to achieve the one cycle pulse
-//While the input signal level remains high the pulse friquency increases
-//max Wall : max distance between pulses
-//min Wall : min distance between pulses
+//author: Tilemachos Tsiapras
+//module name: GrayCounter_Pulse
+//file : Level-to-accelerated-pulse.v
+//description : This module implements a level to pusle that takes a multiple cycle pulse 
+//              and returns a single cycle pulse.
+//              This implementation uses a 3 state FSM to achieve the one cycle pulse
+//              While the input signal level remains high the pulse friquency increases
+//              max Wall : max distance between pulses
+//              min Wall : min distance between pulses
 
 `timescale 1ns / 1ps
 

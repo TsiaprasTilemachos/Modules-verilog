@@ -1,6 +1,9 @@
-//This module implements a syncronus gray counter enebled by a pulse
-//parameter N creates a N bit counter 
-//(for this example N=4 meaning that i get a four bit counter)
+//author: Tilemachos Tsiapras
+//module name: gray_Nbits
+//file : Nbit_Gray_Counter.v
+//description : This module implements a syncronus gray counter enebled by a pulse
+//              parameter N creates a N bit counter 
+//              (for this example N=4 meaning that i get a four bit counter)
 
 `timescale 1ns / 1ps
 

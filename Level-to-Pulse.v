@@ -1,6 +1,9 @@
-//This module implements a level to pusle that takes a multiple cycle pulse 
-//and returns a single cycle pulse.
-//This implementation uses a 3 state FSM to achieve the one cycle pulse
+//author: Tilemachos Tsiapras
+//module name: GrayCounter_Pulse
+//file : Level-to-pulse.v
+//description : This module implements a level to pusle that takes a multiple cycle pulse 
+//              and returns a single cycle pulse.
+//              This implementation uses a 3 state FSM to achieve the one cycle pulse
 
 `timescale 1ns / 1ps
 

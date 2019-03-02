@@ -1,6 +1,9 @@
-//This module is used in order to cancel the noisy of a signal 
-//created by a button on the ZEDboard so that a single pulse is prodused
-//DELAY : nof cycles that the signal must me high in order to raise the output
+//author: Tilemachos Tsiapras
+//module name: debounce
+//file : Debouncer.v
+//description : This module is used in order to cancel the noisy of a signal 
+//              created by a button on the ZEDboard so that a single pulse is prodused
+//              DELAY : nof cycles that the signal must me high in order to raise the output
 
 `timescale 1ns / 1ps
 
